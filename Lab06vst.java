@@ -15,11 +15,20 @@ public class Lab06vst extends Applet
         Random rand = new Random();
 
 
+
+
         // Draw Random Lines
         for(int k=0; k<= 100; k++){
-
         int x1= rand.nextInt(380)+10;
-        int y1= rand.nextInt();
+        int y1= rand.nextInt(280)+10;
+        int width= rand.nextInt(380)+10;
+        int height= rand.nextInt(280)+10;
+
+            int red = rand.nextInt(256);
+            int blue = rand.nextInt(256);
+            int green = rand.nextInt(256);
+            g.setColor(new Color(red,green,blue));
+        g.drawLine(x1,y1,width,height);
 
 
         }
@@ -28,19 +37,41 @@ public class Lab06vst extends Applet
 
 
 
-        // Draw Random Squares
+        // Draw Random Squares\
+        for(int k=0; k<= 100; k++){
+
+            int x1 = rand.nextInt(340)+400;
+            int y1 = rand.nextInt(240)+10;
+            int width
+        }
 
 
 
 
 
-        // Draw Random Circles
+
+
+            // Draw Random Circles
+        for(int k=0; k<= 100; k++){
+
+            int x1 = rand.nextInt(185)+10;
+            int y1 = rand.nextInt(65)+320;
+            int width = rand.nextInt(200);
+            int height = width;
+
+            int red = rand.nextInt(256);
+            int blue = rand.nextInt(256);
+            int green = rand.nextInt(256);
+            g.setColor(new Color(red,green,blue));
+            g.drawOval(x1,y1,width,height);
+        }
 
 
 
 
 
-        // Draw 3-D Box
+
+            // Draw 3-D Box
 
 
 
