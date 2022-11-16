@@ -42,7 +42,14 @@ public class Lab06vst extends Applet
 
             int x1 = rand.nextInt(340)+400;
             int y1 = rand.nextInt(240)+10;
-            int width
+            int width = 50;
+            int height = 50;
+
+            int red = rand.nextInt(256);
+            int blue = rand.nextInt(256);
+            int green = rand.nextInt(256);
+            g.setColor(new Color(red,green,blue));
+            g.fillRect(x1,y1,width,height);
         }
 
 
